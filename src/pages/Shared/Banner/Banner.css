@@ -1,0 +1,34 @@
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+.bg{
+   
+    min-height: 95vh;
+    position: relative;
+    width: 100%;
+    padding-top: 6vh;
+}
+.bg h1{
+    width: 100%;
+    font-size: 16vw;
+    font-family: futura;
+    line-height: 14vw;
+    letter-spacing: -5px;
+}
+.look{
+    margin-left: 146px;
+}
+.banner-img{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    margin-top: -95px;
+}
+.banner-img img{
+    width: 100%;
+
+}
