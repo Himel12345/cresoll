@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const Banner = () => {
     useGSAP(()=>{
 gsap.from('.bg h1',{
-    y:100,
+    y:70,
     opacity:0,
     delay: 0.5,
     duration: 0.9,
@@ -26,7 +26,7 @@ gsap.from('.bg .banner-img',{
     },[]);
     return (
         <div className='bg'>
-                <h1 className='we'>WE</h1>
+  <h1 className='we'>WE</h1>
             <h1 className='change'> CHANGE </h1>
             <h1 className='look'>THE LOOK </h1>
             <div className='banner-img'>

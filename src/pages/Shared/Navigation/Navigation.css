@@ -54,3 +54,12 @@ color: black;
 text-decoration: none;
 color: black;
 }
+@media screen and (max-width: 600px) {
+    .nav-links{
+        display: none;
+    }
+    .nav img{
+        height: 53px;
+        width: 64px;
+    }
+}

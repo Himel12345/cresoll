@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
-
 import { Outlet } from 'react-router-dom';
-import Banner from '../pages/Shared/Banner/Banner';
 import Navigation from '../pages/Shared/Navigation/Navigation';
+import Banner from '../pages/Shared/Banner/Banner';
+import Catagory from '../pages/Shared/Catagory/Catagory';
+
 
 const Main = () => {
     const scrollRef = useRef(null);
@@ -27,6 +28,7 @@ const Main = () => {
         <div id='main' >
             <Navigation></Navigation>
             <Banner></Banner>
+            <Catagory></Catagory>
             <Outlet></Outlet>
         </div>
     );
