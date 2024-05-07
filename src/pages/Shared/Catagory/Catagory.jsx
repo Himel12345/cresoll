@@ -27,7 +27,7 @@ const Catagory = () => {
         <div>
             <div className='cata-text'>
                 <h1>Adorn yourself in elegance!!</h1>
-                <p>Explore Our New Product</p>
+                <p>Explore Our New Products</p>
             </div>
             <div className='cata-design'>
                 <div><p>Buy Good</p></div>
