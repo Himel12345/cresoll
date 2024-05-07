@@ -5,7 +5,8 @@ import Navigation from '../pages/Shared/Navigation/Navigation';
 import Banner from '../pages/Shared/Banner/Banner';
 import Catagory from '../pages/Shared/Catagory/Catagory';
 import Social from '../pages/Shared/Social/Social';
-
+import Products from '../pages/Shared/Products/Products';
+import './Main.css'
 
 const Main = () => {
     useEffect(() => {
@@ -31,12 +32,15 @@ const Main = () => {
         return () => {
             destroyScroll();
         };
+        
     }, []);
     return (
         <div id='main' >
+            
             <Navigation></Navigation>
             <Banner></Banner>
             <Catagory></Catagory>
+            <Products></Products>
             <Social></Social>
             <Outlet></Outlet>
         </div>

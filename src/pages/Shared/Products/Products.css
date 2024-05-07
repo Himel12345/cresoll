@@ -1,0 +1,115 @@
+.product-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+   
+   
+}
+ .product-h1{
+    width: 160%;
+margin-left: 20px;
+}
+.product-h1 h1{
+    font-family: futura;
+    text-transform: uppercase;
+}
+.product-p{
+    margin-right:70px ;
+    width: 80%;
+    font-family: helvetica
+}
+.product-p p{
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+.product-p a{
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+}
+.product-p a::before {
+    content: ''; 
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%; 
+    height: 2px; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+}
+
+.product-p a:hover::before {
+    background-color: rgb(58, 58, 58); 
+}
+.product-img{
+    min-height: 120vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child{
+    height: 54vh;
+    width: 33vw;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child img{
+height: 100%;
+width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33vw;
+    height: 54vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: rgb(230, 228, 228);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add transition for smooth appearance */
+}
+
+.child:hover .overlay {
+    opacity: 1; /* Show text overlay when hovering over the child div */
+}
+.overlay-txt{
+    margin-top: 90px;
+    font-family: helvetica;
+    letter-spacing: 2px;
+}
+.overlay-txt p{
+    font-size: 15px;
+}
+.buy-now {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgb(151, 151, 151); /* Silver color */
+    color: black; /* Text color */
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.buy-now:hover {
+    background-color: #ccc; /* Darker silver color on hover */
+}
+.overlay a{
+    font-family: helvetica;
+}
+.ex{
+    padding: 0 20px;
+}
