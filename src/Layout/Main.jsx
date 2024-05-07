@@ -7,23 +7,30 @@ import Catagory from '../pages/Shared/Catagory/Catagory';
 
 
 const Main = () => {
-    const scrollRef = useRef(null);
-
     useEffect(() => {
-        
-        scrollRef.current = new LocomotiveScroll({
-            el: document.querySelector('#main'),
-            smooth: true
-        });
+        let scrollInstance = null;
 
-        
-        return () => {
-            if (scrollRef.current) {
-                scrollRef.current.destroy();
+        const initScroll = () => {
+            scrollInstance = new LocomotiveScroll({
+                el: document.querySelector('#main'),
+                smooth: true,
+                // Add any other configuration options you need
+            });
+        };
+
+        const destroyScroll = () => {
+            if (scrollInstance) {
+                scrollInstance.destroy();
+                scrollInstance = null;
             }
         };
-    }, []);
 
+        initScroll();
+
+        return () => {
+            destroyScroll();
+        };
+    }, []);
     return (
         <div id='main' >
             <Navigation></Navigation>

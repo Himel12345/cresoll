@@ -34,10 +34,10 @@ const Catagory = () => {
                 <div><p>Look Good</p>
                 </div>
             </div><hr className='hr' />
-            <div className='cata-item'> 
-            <div id="elem1" className="elem"><img  src={ring} alt="" /></div>
-            <div id="elem2" className="elem"><img src={braclet} alt="" /></div>
-            <div id="elem3" className="elem"><img src={chain} alt="" /></div>
+            <div className='cata-item'>
+                <div id="elem1" className="elem"><img src={ring} alt="" /><a href=""><div className="dets"><p>Shop Now</p></div></a></div>
+                <div id="elem2" className="elem"><img src={braclet} alt="" /><a href=""><div className="dets"><p>Shop Now</p></div></a></div>
+                <div id="elem3" className="elem"><img src={chain} alt="" /><a href=""><div className="dets"><p>Shop Now</p></div></a></div>
             </div>
         </div>
     );
